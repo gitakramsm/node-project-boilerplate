@@ -1,5 +1,5 @@
 To setup the project:
-
+(if you are using node v 22, else scroll down)
 step-1. Clone the project
 
 ```
@@ -17,8 +17,14 @@ step-3. Install dependencies
 ```
 npm install
 ```
+step-4. In the root directory create a .env file and add the following env variables
 
-step-4. Turn up the server
+    PORT=<port number of your choice>
+ex:
+
+    PORT=3000
+
+step-5. Turn up the server
 
 ```
 node index.js
@@ -39,7 +45,7 @@ do this after step 2
         "dev": "npx nodemon ./src/index.js"
     },
 
-  then do step 3 and 4.
+  then do step 3,4 and 5.
 
 
 [note: nodemon is a package that automatically restarts the server after changes.]
